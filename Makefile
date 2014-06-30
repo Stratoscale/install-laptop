@@ -31,7 +31,10 @@ build/installer/install-laptop.tgz:
 	tar -czf $@ -C build install-laptop
 
 submit: build/installer/install-laptop.tgz
-	solvent submitproduct installer `dirname $<`
+	sudo -E solvent submitproduct installer `dirname $<`
+
+approve: $(ROOTFS)
+	sudo -E solvent approve --product=installer
 
 .PHONY: install_here
 install_here: install_osmosis install_upseto_and_solvent install_inaugurator install_yumcache install_rackattack_virtual
