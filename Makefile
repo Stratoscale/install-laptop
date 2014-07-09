@@ -16,8 +16,10 @@ build/installer/install-laptop.tgz:
 	cp ../upseto/dist/*.egg build/install-laptop/packages -a
 	cp ../upseto/upseto.pth build/install-laptop/etc -a
 	cp ../upseto/upseto.sh build/install-laptop/etc -a
+	cp ../upseto/bash.completion.sh build/install-laptop/etc/upseto.bash.completion.sh -a
 	cp ../solvent/dist/*.egg build/install-laptop/packages -a
 	cp ../solvent/solvent.sh build/install-laptop/etc -a
+	cp ../solvent/bash.completion.sh build/install-laptop/etc/solvent.bash.completion.sh -a
 	cp solvent.conf build/install-laptop/etc -a
 	cp ../inaugurator/dist/*.egg build/install-laptop/packages -a
 	cp ../inaugurator/build/inaugurator.initrd.img ../inaugurator/build/inaugurator.vmlinuz build/install-laptop/packages -a

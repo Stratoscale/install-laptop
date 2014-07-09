@@ -19,6 +19,8 @@ sudo cp etc/upseto.pth /usr/lib/python2.7/site-packages/upseto.pth
 if [ "$?" != "0" ]; then exit -1; fi
 sudo cp etc/upseto.sh /usr/bin/upseto
 if [ "$?" != "0" ]; then exit -1; fi
+sudo cp etc/upseto.bash.completion.sh /etc/bash_completion.d/upseto.sh
+if [ "$?" != "0" ]; then exit -1; fi
 sudo chmod 755 /usr/bin/upseto
 if [ "$?" != "0" ]; then exit -1; fi
 
@@ -29,6 +31,8 @@ if [ "$?" != "0" ]; then exit -1; fi
 sudo cp etc/solvent.sh /usr/bin/solvent
 if [ "$?" != "0" ]; then exit -1; fi
 sudo chmod 755 /usr/bin/solvent
+if [ "$?" != "0" ]; then exit -1; fi
+sudo cp etc/solvent.bash.completion.sh /etc/bash_completion.d/solvent.sh
 if [ "$?" != "0" ]; then exit -1; fi
 sudo cp etc/solvent.conf /etc/solvent.conf -a
 if [ "$?" != "0" ]; then exit -1; fi
