@@ -1,5 +1,8 @@
 all: install_here build test
 
+clean:
+	rm -fr build
+
 test: build
 	cd build/install-laptop ; ./install.sh
 
