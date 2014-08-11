@@ -1,4 +1,9 @@
-all: install_here build test
+all: everything
+	
+#make build can still be run locally without running all installers here,
+#but "make -j X" does not break
+everything: install_here
+	$(MAKE) test
 
 clean:
 	rm -fr build
