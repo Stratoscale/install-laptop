@@ -5,5 +5,7 @@ requirements:
   originURL: https://github.com/Stratoscale/yumcache.git
 - hash: 345f46db77f3957dff0546a139652d685f643863
   originURL: https://github.com/Stratoscale/inaugurator.git
-- hash: 05e8416bc33b8f27e101a0f76cb78b45d32441fc
+- hash: 2fdd543b5c79e665d52ccc9ab9138e0581ec7223
   originURL: https://github.com/Stratoscale/rackattack-virtual.git
+- hash: 9154273e137be9226fe7a924b214e8340018b49b
+  originURL: https://github.com/Stratoscale/logbeam.git

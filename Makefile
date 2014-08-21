@@ -36,6 +36,9 @@ build/installer/install-laptop.tgz:
 	cp yumcache.config build/install-laptop/etc -a
 	cp ../rackattack-virtual/build/*.egg build/install-laptop/packages -a
 	cp ../rackattack-virtual/rackattack-virtual.service build/install-laptop/etc -a
+	cp ../logbeam/dist/*.egg build/install-laptop/packages -a
+	cp ../logbeam/logbeam.sh build/install-laptop/etc -a
+	cp ../logbeam/bash.completion.sh build/install-laptop/etc/logbeam.bash.completion.sh -a
 	cp install.sh build/install-laptop/ -a
 	chmod 755 build/install-laptop/install.sh
 	tar -czf $@ -C build install-laptop
@@ -47,7 +50,7 @@ approve: $(ROOTFS)
 	sudo -E solvent approve --product=installer
 
 .PHONY: install_here
-install_here: install_osmosis install_upseto_and_solvent install_inaugurator install_yumcache install_rackattack_virtual
+install_here: install_osmosis install_upseto_and_solvent install_inaugurator install_yumcache install_rackattack_virtual install_logbeam
 
 install_osmosis:
 	cd ../osmosis ; DONT_START_SERVICE=yes make install
@@ -68,3 +71,6 @@ install_yumcache:
 
 install_rackattack_virtual:
 	cd ../rackattack-virtual ; DONT_START_SERVICE=yes make install
+
+install_logbeam:
+	cd ../logbeam ; make install
