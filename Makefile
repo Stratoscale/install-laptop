@@ -43,10 +43,10 @@ build/installer/install-laptop.tgz:
 	chmod 755 build/install-laptop/install.sh
 	tar -czf $@ -C build install-laptop
 
-submit: build/installer/install-laptop.tgz
-	sudo -E solvent submitproduct installer `dirname $<`
+submit:
+	sudo -E solvent submitproduct installer build/installer
 
-approve: $(ROOTFS)
+approve:
 	sudo -E solvent approve --product=installer
 
 .PHONY: install_here
