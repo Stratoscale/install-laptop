@@ -46,7 +46,7 @@ $SUDO mkdir /usr/share/inaugurator >& /dev/null
 yes | $SUDO pip uninstall inaugurator >& /dev/null
 $SUDO easy_install packages/inaugurator*.egg
 if [ "$?" != "0" ]; then exit -1; fi
-$SUDO cp packages/inaugurator.initrd.img packages/inaugurator.vmlinuz /usr/share/inaugurator
+$SUDO cp packages/inaugurator.*.initrd.img packages/inaugurator.vmlinuz /usr/share/inaugurator
 if [ "$?" != "0" ]; then exit -1; fi
 $SUDO chmod 644 /usr/share/inaugurator/*
 if [ "$?" != "0" ]; then exit -1; fi

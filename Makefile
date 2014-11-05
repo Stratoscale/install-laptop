@@ -30,7 +30,7 @@ build/installer/install-laptop.tgz:
 	cp ../solvent/bash.completion.sh build/install-laptop/etc/solvent.bash.completion.sh -a
 	cp solvent.conf build/install-laptop/etc -a
 	cp ../inaugurator/dist/*.egg build/install-laptop/packages -a
-	cp ../inaugurator/build/inaugurator.initrd.img ../inaugurator/build/inaugurator.vmlinuz build/install-laptop/packages -a
+	cp ../inaugurator/build/inaugurator.*.initrd.img ../inaugurator/build/inaugurator.vmlinuz build/install-laptop/packages -a
 	cp ../yumcache/dist/*.egg build/install-laptop/packages -a
 	cp ../yumcache/yumcache.service build/install-laptop/etc/ -a
 	cp yumcache.config build/install-laptop/etc -a
