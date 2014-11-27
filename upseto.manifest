@@ -1,5 +1,5 @@
 requirements:
-- hash: 5869f5b4d4eaa7be7a23a0f65c007d2b2b8fc778
+- hash: 10ca52da8576e013b507c348e60e537da9c9e5a3
   originURL: https://github.com/Stratoscale/solvent.git
 - hash: 2107248b7828a164914e78e08ca6a0272596a50f
   originURL: https://github.com/Stratoscale/yumcache.git
