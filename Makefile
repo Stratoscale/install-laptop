@@ -39,6 +39,7 @@ build/installer/install-laptop.tgz:
 	cp ../logbeam/dist/*.egg build/install-laptop/packages -a
 	cp ../logbeam/logbeam.sh build/install-laptop/etc -a
 	cp ../logbeam/bash.completion.sh build/install-laptop/etc/logbeam.bash.completion.sh -a
+	cp asset.conf build/install-laptop/etc -a
 	cp install.sh build/install-laptop/ -a
 	chmod 755 build/install-laptop/install.sh
 	tar -czf $@ -C build install-laptop
