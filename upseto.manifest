@@ -1,11 +1,11 @@
 requirements:
-- hash: 834dedf93f612cde540719e98b7ab685f7e5e856
+- hash: 56a496a19938fcddc5bf40310980d7f2bacb7eb4
   originURL: https://github.com/Stratoscale/solvent.git
 - hash: e630445762b25260a42658fdc053d81ba1362b9c
   originURL: https://github.com/Stratoscale/yumcache.git
-- hash: 774243e5b188ff71a602343b5bbf088e11925d13
+- hash: dd41a55f59e57a8769f41400979a97b6da4dfb3a
   originURL: https://github.com/Stratoscale/inaugurator.git
-- hash: dc596417d664dff8353e67badf4aa66abb3f393b
+- hash: bff9c5ce06abac4a2edaeb927a7fc3cc8bfde99a
   originURL: https://github.com/Stratoscale/rackattack-virtual.git
 - hash: 92fb81276b0918e66ca11b6cfbe9a7ad2fb1d1a0
   originURL: https://github.com/Stratoscale/logbeam.git
