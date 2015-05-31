@@ -86,10 +86,4 @@ if [ "$?" != "0" ]; then exit -1; fi
 $SUDO chmod 755 /usr/bin/logbeam
 if [ "$?" != "0" ]; then exit -1; fi
 
-#configure asset
-if [ ! -x /etc/asset.conf ]; then
-    $SUDO cp etc/asset.conf /etc/asset.conf -a
-    if [ "$?" != "0" ]; then exit -1; fi
-fi
-
 echo "Install-laptop Completed SUCCESSFULLY"
